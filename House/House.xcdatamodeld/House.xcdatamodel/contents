@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="House" representedClassName="House" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="resident" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Resident" inverseName="house" inverseEntity="Resident" syncable="YES"/>
+    </entity>
+    <entity name="Resident" representedClassName="Resident" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="resident" inverseEntity="House" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="House" positionX="-7275.20703125" positionY="4248.0390625" width="128" height="88"/>
+        <element name="Resident" positionX="-6987.84375" positionY="4263.8671875" width="128" height="73"/>
+    </elements>
 </model>

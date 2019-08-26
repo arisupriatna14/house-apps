@@ -13,6 +13,14 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    static var persistentContainer: NSPersistentContainer {
+        return (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+    }
+    
+    static var context: NSManagedObjectContext {
+        return persistentContainer.viewContext
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

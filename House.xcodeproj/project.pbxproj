@@ -13,6 +13,11 @@
 		860754E723124D0D00198DE7 /* House.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 860754E523124D0D00198DE7 /* House.xcdatamodeld */; };
 		860754E923124D0F00198DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860754E823124D0F00198DE7 /* Assets.xcassets */; };
 		860754EC23124D0F00198DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860754EA23124D0F00198DE7 /* LaunchScreen.storyboard */; };
+		860754F42312698900198DE7 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860754F32312698900198DE7 /* HouseViewController.swift */; };
+		860754F62312699D00198DE7 /* ResidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860754F52312699D00198DE7 /* ResidentViewController.swift */; };
+		860754F823128DD000198DE7 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860754F723128DD000198DE7 /* HouseDetailViewController.swift */; };
+		860754FA2312C01000198DE7 /* ResidentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860754F92312C01000198DE7 /* ResidentDetailViewController.swift */; };
+		86C369512312F083004AE1DB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C369502312F083004AE1DB /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		860754E823124D0F00198DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		860754EB23124D0F00198DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860754ED23124D0F00198DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		860754F32312698900198DE7 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		860754F52312699D00198DE7 /* ResidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentViewController.swift; sourceTree = "<group>"; };
+		860754F723128DD000198DE7 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		860754F92312C01000198DE7 /* ResidentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentDetailViewController.swift; sourceTree = "<group>"; };
+		86C369502312F083004AE1DB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				860754EA23124D0F00198DE7 /* LaunchScreen.storyboard */,
 				860754ED23124D0F00198DE7 /* Info.plist */,
 				860754E523124D0D00198DE7 /* House.xcdatamodeld */,
+				860754F32312698900198DE7 /* HouseViewController.swift */,
+				860754F52312699D00198DE7 /* ResidentViewController.swift */,
+				860754F723128DD000198DE7 /* HouseDetailViewController.swift */,
+				860754F92312C01000198DE7 /* ResidentDetailViewController.swift */,
+				86C369502312F083004AE1DB /* SearchViewController.swift */,
 			);
 			path = House;
 			sourceTree = "<group>";
@@ -139,8 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				860754E123124D0D00198DE7 /* ViewController.swift in Sources */,
+				860754FA2312C01000198DE7 /* ResidentDetailViewController.swift in Sources */,
+				86C369512312F083004AE1DB /* SearchViewController.swift in Sources */,
+				860754F62312699D00198DE7 /* ResidentViewController.swift in Sources */,
 				860754E723124D0D00198DE7 /* House.xcdatamodeld in Sources */,
 				860754DF23124D0D00198DE7 /* AppDelegate.swift in Sources */,
+				860754F823128DD000198DE7 /* HouseDetailViewController.swift in Sources */,
+				860754F42312698900198DE7 /* HouseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
