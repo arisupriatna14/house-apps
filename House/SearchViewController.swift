@@ -16,12 +16,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     var allResident: [Resident] = []
+    var isSearching = false
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        searchTextField.returnKeyType = .search
-        
-        fetchFromCoreData()
+      super.viewDidLoad()
+      searchTextField.returnKeyType = .search
+      
+      fetchFromCoreData()
     }
     
     //MARK: TableViewDataSource
@@ -40,13 +41,21 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     //MARK: IBActions
     @IBAction func searchButtonPressed(_ sender: Any) {
+        isSearching = !isSearching
+      
         if searchTextField.text != "" {
             // search core data
-            let searchPredicate = NSPredicate(format: "name contains[c] %@", searchTextField.text!)
-            
-            fetchFromCoreData(predicate: searchPredicate)
+          if isSearching {
+            searchButtonOutlet.setTitle("Cancel", for: .normal)
+          } else {
+            searchButtonOutlet.setTitle("Search", for: .normal)
+          }
+          let searchPredicate = NSPredicate(format: "name contains[c] %@", searchTextField.text!)
+          
+          fetchFromCoreData(predicate: searchPredicate)
         } else {
-            
+          searchButtonOutlet.setTitle("Cancel", for: .normal)
+          fetchFromCoreData()
         }
     }
     
